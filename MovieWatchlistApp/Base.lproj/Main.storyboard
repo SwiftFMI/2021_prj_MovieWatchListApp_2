@@ -20,7 +20,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vja-wE-rfu"/>
-                        <segue destination="Fkl-Pe-VtK" kind="relationship" relationship="viewControllers" id="ohj-qg-yL5"/>
+                        <segue destination="dRC-xA-S0H" kind="relationship" relationship="viewControllers" id="ohj-qg-yL5"/>
                         <segue destination="NKo-x9-FLR" kind="relationship" relationship="viewControllers" id="nxa-u4-kuh"/>
                     </connections>
                 </tabBarController>
@@ -44,21 +44,21 @@
             </objects>
             <point key="canvasLocation" x="987" y="-53"/>
         </scene>
-        <!--My List-->
+        <!--My List View Controller-->
         <scene sceneID="iOy-3s-lWv">
             <objects>
-                <viewController id="Fkl-Pe-VtK" sceneMemberID="viewController">
+                <viewController id="Fkl-Pe-VtK" customClass="MyListViewController" customModule="MovieWatchlistApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SBS-z4-NbA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="HUR-j9-3W7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My List" image="list.and.film" catalog="system" id="kfA-c3-XgU"/>
+                    <navigationItem key="navigationItem" id="21J-c4-Bls"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Mu-YY-rrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2757.971014492754" y="306.69642857142856"/>
+            <point key="canvasLocation" x="3668.115942028986" y="306.69642857142856"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="3Km-jg-ZPH">
@@ -94,6 +94,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFs-sf-Y5n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986.95652173913049" y="680.35714285714278"/>
+        </scene>
+        <!--My List-->
+        <scene sceneID="Ooc-aO-MAL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dRC-xA-S0H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My List" image="list.and.film" catalog="system" id="kfA-c3-XgU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="S7U-Hw-hN3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fkl-Pe-VtK" kind="relationship" relationship="rootViewController" id="0Ub-vB-eJv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kD-rt-cKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757.971014492754" y="306.69642857142856"/>
         </scene>
     </scenes>
     <resources>
