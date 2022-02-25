@@ -27,7 +27,7 @@ class MovieListState: ObservableObject {
             self.isLoading = false
             switch result {
             case .success(let response):
-                self.movies = response.results
+                self.movies = response.res
                 
             case .failure(let error):
                 self.error = error as NSError
