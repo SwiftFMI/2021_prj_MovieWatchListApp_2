@@ -1,5 +1,5 @@
 //
-//  MovieService.swift
+//  MovieStore.swift
 //  Watchlist
 //
 //  Created by Dennis Dimitrov on 22.02.22.
