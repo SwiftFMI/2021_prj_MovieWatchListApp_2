@@ -17,7 +17,7 @@ class ImageLoader: ObservableObject{
     var imageCache =  imageCache_
     
     func loadImage(with url: URL){
-        var urlStr = url.absoluteString
+        let urlStr = url.absoluteString
         if let imageFromCache =  imageCache.object(forKey: urlStr as AnyObject) as? UIImage {
             self.image = imageFromCache
             return

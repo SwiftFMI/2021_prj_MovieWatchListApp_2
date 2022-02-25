@@ -1,24 +1,16 @@
 //
-//  Users.swift
+//  User.swift
 //  MovieWatchlistApp
 //
 //  Created by Dennis Dimitrov on 24.02.22.
 //
 
+import UIKit
 
-
-import Foundation
-
-
-class User{
+class User {
     var username: String = ""
     var password: String = "" // not sure if needed
     var email: String?
     var movieList: [Movie]?
-    var seriesList: [Series]?
-    
-    
-    
-    
+    var seriesList: [TVShow]?
 }
-

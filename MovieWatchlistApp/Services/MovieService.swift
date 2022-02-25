@@ -9,20 +9,20 @@ import Foundation
 
 protocol MovieService{
     func fetchMovies(from endpoint: MovieListEndpoint, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
-     func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
-     func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
-    
+    func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
+    func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
+    func searchSeries(query: String, completion: @escaping (Result<TVShowResponse, MovieError>) -> ())
 }
 
 
-enum MovieListEndpoint: String{
+enum MovieListEndpoint: String {
     case nowPlaying = "now_playing"
     case upcoming
     case topRated = "top_rated"
     case popular
     
-    var description: String{
-        switch self{
+    var description: String {
+        switch self {
         case .nowPlaying: return "Now Playing"
         case .upcoming: return "Upcoming"
         case .topRated: return "Top rated"
@@ -32,7 +32,7 @@ enum MovieListEndpoint: String{
     
 }
 
-enum MovieError: Error, CustomNSError{
+enum MovieError: Error, CustomNSError {
     case apiError
     case invalidEndpoint
     case invalidResponse
@@ -49,7 +49,7 @@ enum MovieError: Error, CustomNSError{
         }
     }
     
-    var errorUserInfo: [String : Any]{
+    var errorUserInfo: [String : Any] {
         [NSLocalizedDescriptionKey: localDesc]
     }
 }

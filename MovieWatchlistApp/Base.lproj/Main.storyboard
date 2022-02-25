@@ -60,21 +60,21 @@
             </objects>
             <point key="canvasLocation" x="4578.2608695652179" y="306.69642857142856"/>
         </scene>
-        <!--Search View Controller-->
-        <scene sceneID="3Km-jg-ZPH">
+        <!--Movie View Controller-->
+        <scene sceneID="BcN-5p-XC3">
             <objects>
-                <viewController id="cjx-lX-JVS" customClass="SearchViewController" customModule="MovieWatchlistApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xSB-5q-o6r">
+                <viewController id="ONg-4W-eW5" customClass="MovieViewController" customModule="MovieWatchlistApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IgS-5b-Rny">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="0SI-Le-Ae0"/>
+                        <viewLayoutGuide key="safeArea" id="opt-oG-s7f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="o9k-79-TXo"/>
+                    <navigationItem key="navigationItem" id="uEN-3A-N8b"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6v7-bk-ePk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCm-wl-0qZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897.1014492753625" y="680.35714285714278"/>
+            <point key="canvasLocation" x="2829" y="680"/>
         </scene>
         <!--Search-->
         <scene sceneID="hM5-K7-Eht">
@@ -88,12 +88,44 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="cjx-lX-JVS" kind="relationship" relationship="rootViewController" id="vBU-Zw-p56"/>
+                        <segue destination="E97-ip-dy3" kind="relationship" relationship="rootViewController" id="QaB-Jk-i4Y"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFs-sf-Y5n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986.95652173913049" y="680.35714285714278"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Ivu-w3-7gx">
+            <objects>
+                <tableViewController id="E97-ip-dy3" customClass="SearchViewController" customModule="MovieWatchlistApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="YyT-YU-don">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="Afh-It-Oed">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Afh-It-Oed" id="QhR-IN-qMV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="E97-ip-dy3" id="62b-cP-n0F"/>
+                            <outlet property="delegate" destination="E97-ip-dy3" id="gBE-VZ-RWJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="foB-7w-qEP"/>
+                    <connections>
+                        <segue destination="ONg-4W-eW5" kind="show" identifier="movieSegue" id="Wlc-Zn-RhX"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDg-Vc-Q3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="680"/>
         </scene>
         <!--My List-->
         <scene sceneID="Ooc-aO-MAL">

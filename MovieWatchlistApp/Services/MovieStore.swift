@@ -43,7 +43,20 @@ class MovieStore: MovieService {
         self.loadURLAndDecode(url: url, params: [
             "language": "en-US",
             "include_adult": "false",
-            "region": "US",
+//            "region": "US",
+            "query": query
+        ], completion: completion)
+    }
+    
+    func searchSeries(query: String, completion: @escaping (Result<TVShowResponse, MovieError>) -> ()) {
+        guard let url = URL(string: "\(baseAPIURL)/search/tv") else {
+            completion(.failure(.invalidEndpoint))
+            return
+        }
+        self.loadURLAndDecode(url: url, params: [
+            "language": "en-US",
+            "include_adult": "false",
+//            "region": "US",
             "query": query
         ], completion: completion)
     }
