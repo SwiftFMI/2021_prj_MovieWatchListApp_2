@@ -23,9 +23,8 @@ class ImageLoader: ObservableObject{
             return
         }
         
-        
-        DispatchQueue.global(qos: background).async { [weak self] in
-            guard let self = seld else { return}
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            guard let self = self else { return}
             do{
                 let data  = try Data(contentsOf: url)
                 guard let image = UIImage(data: data) else{
