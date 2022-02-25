@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 class MovieStore: MovieService {
     
     static let shared = MovieStore()
