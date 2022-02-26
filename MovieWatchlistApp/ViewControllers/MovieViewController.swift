@@ -10,11 +10,16 @@ import UIKit
 class MovieViewController: UIViewController {
     
     var movie: Movie?
-
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var overviewLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = movie?.title
+        imageView.image = UIImage(data: try! Data(contentsOf: movie!.backdropURL))
+        overviewLabel.text = movie?.overview
     }
     
 }

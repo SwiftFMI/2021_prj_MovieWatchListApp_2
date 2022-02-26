@@ -27,6 +27,7 @@
 		C08DB46227C5125B00D5A79D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08DB46127C5125B00D5A79D /* Assets.xcassets */; };
 		C08DB46527C5125B00D5A79D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08DB46327C5125B00D5A79D /* LaunchScreen.storyboard */; };
 		C0FE21F227C97F46009EA6E5 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE21F127C97F46009EA6E5 /* MovieViewController.swift */; };
+		C0FE21F427CA2C9A009EA6E5 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE21F327CA2C9A009EA6E5 /* TVShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		C08DB46427C5125B00D5A79D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C08DB46627C5125C00D5A79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0FE21F127C97F46009EA6E5 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		C0FE21F327CA2C9A009EA6E5 /* TVShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				C01461B227C7ECE6001749D4 /* MyListViewController.swift */,
 				C01461B427C7EE7D001749D4 /* FeaturedViewController.swift */,
 				C0FE21F127C97F46009EA6E5 /* MovieViewController.swift */,
+				C0FE21F327CA2C9A009EA6E5 /* TVShowViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				1695E10027C8271C005AA3AC /* MovieListState.swift in Sources */,
 				C01461B527C7EE7D001749D4 /* FeaturedViewController.swift in Sources */,
 				C08DB45B27C5125A00D5A79D /* SceneDelegate.swift in Sources */,
+				C0FE21F427CA2C9A009EA6E5 /* TVShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

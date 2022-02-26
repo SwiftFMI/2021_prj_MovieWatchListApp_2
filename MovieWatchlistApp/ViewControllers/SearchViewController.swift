@@ -47,7 +47,7 @@ class SearchViewController: UITableViewController {
         case "TV Shows":
             content.text = tvShows?[indexPath.row].name
         default:
-            content.text = "Empty"
+            break
         }
         
         cell.contentConfiguration = content
@@ -56,14 +56,27 @@ class SearchViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let movie = movies![indexPath.row]
-        performSegue(withIdentifier: "movieSegue", sender: movie)
+        switch searchController.searchBar.scopeButtonTitles![searchController.searchBar.selectedScopeButtonIndex] {
+        case "Movies":
+            let movie = movies![indexPath.row]
+            performSegue(withIdentifier: "movieSegue", sender: movie)
+        case "TV Shows":
+            let tvShow = tvShows![indexPath.row]
+            performSegue(withIdentifier: "tvShowSegue", sender: tvShow)
+        default:
+            break
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "movieSegue") {
             if let nextViewController = segue.destination as? MovieViewController {
                 nextViewController.movie = sender as? Movie
+            }
+        }
+        else if (segue.identifier == "tvShowSegue") {
+            if let nextViewController = segue.destination as? TVShowViewController {
+                nextViewController.tvShow = sender as? TVShow
             }
         }
     }
