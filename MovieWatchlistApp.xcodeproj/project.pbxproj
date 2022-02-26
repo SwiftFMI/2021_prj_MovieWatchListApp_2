@@ -26,8 +26,10 @@
 		C08DB46027C5125A00D5A79D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08DB45E27C5125A00D5A79D /* Main.storyboard */; };
 		C08DB46227C5125B00D5A79D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08DB46127C5125B00D5A79D /* Assets.xcassets */; };
 		C08DB46527C5125B00D5A79D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08DB46327C5125B00D5A79D /* LaunchScreen.storyboard */; };
+		C0CD1A5127CA56B00016F0AD /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD1A5027CA56B00016F0AD /* ImageCacher.swift */; };
 		C0FE21F227C97F46009EA6E5 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE21F127C97F46009EA6E5 /* MovieViewController.swift */; };
 		C0FE21F427CA2C9A009EA6E5 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE21F327CA2C9A009EA6E5 /* TVShowViewController.swift */; };
+		C0FE21F627CA36C8009EA6E5 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE21F527CA36C8009EA6E5 /* CollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +54,10 @@
 		C08DB46127C5125B00D5A79D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08DB46427C5125B00D5A79D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C08DB46627C5125C00D5A79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CD1A5027CA56B00016F0AD /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
 		C0FE21F127C97F46009EA6E5 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		C0FE21F327CA2C9A009EA6E5 /* TVShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
+		C0FE21F527CA36C8009EA6E5 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				1695E0FA27C8269E005AA3AC /* Bindings */,
-				1695E0F427C82546005AA3AC /* Services */,
+				C0CD1A4F27CA54E20016F0AD /* Caches */,
 				1695E0E927C82404005AA3AC /* Models */,
+				1695E0F427C82546005AA3AC /* Services */,
 				C01461A627C6B220001749D4 /* ViewControllers */,
+				C0FE21F527CA36C8009EA6E5 /* CollectionCell.swift */,
 				C08DB45827C5125A00D5A79D /* AppDelegate.swift */,
 				C08DB45A27C5125A00D5A79D /* SceneDelegate.swift */,
 				1695E0F227C82506005AA3AC /* Utils.swift */,
@@ -142,6 +148,14 @@
 				C08DB46627C5125C00D5A79D /* Info.plist */,
 			);
 			path = MovieWatchlistApp;
+			sourceTree = "<group>";
+		};
+		C0CD1A4F27CA54E20016F0AD /* Caches */ = {
+			isa = PBXGroup;
+			children = (
+				C0CD1A5027CA56B00016F0AD /* ImageCacher.swift */,
+			);
+			path = Caches;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +233,7 @@
 				1695E0EB27C82427005AA3AC /* Movie.swift in Sources */,
 				1695E0EF27C82485005AA3AC /* User.swift in Sources */,
 				1695E0FE27C826E5005AA3AC /* MovieDetailState.swift in Sources */,
+				C0FE21F627CA36C8009EA6E5 /* CollectionCell.swift in Sources */,
 				C08DB45D27C5125A00D5A79D /* ViewController.swift in Sources */,
 				1695E10227C82758005AA3AC /* MovieSearchState.swift in Sources */,
 				1695E0F827C825B1005AA3AC /* MovieStore.swift in Sources */,
@@ -226,6 +241,7 @@
 				C0FE21F227C97F46009EA6E5 /* MovieViewController.swift in Sources */,
 				C08DB45927C5125A00D5A79D /* AppDelegate.swift in Sources */,
 				C01461B327C7ECE6001749D4 /* MyListViewController.swift in Sources */,
+				C0CD1A5127CA56B00016F0AD /* ImageCacher.swift in Sources */,
 				1695E0F627C8257E005AA3AC /* MovieService.swift in Sources */,
 				C01461A827C6B23E001749D4 /* SearchViewController.swift in Sources */,
 				1695E0F327C82506005AA3AC /* Utils.swift in Sources */,
