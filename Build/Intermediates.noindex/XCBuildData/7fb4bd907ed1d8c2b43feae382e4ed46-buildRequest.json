@@ -1,0 +1,64 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "b3fc6c42776c6897f453b9cfa23d104d7185297c62a6c85c26ce3f498b20c030"
+    }
+  ],
+  "containerPath" : "/Users/dennisdimitrov/Documents/GitHub/2021_prj_MovieWatchListApp_2/MovieWatchlistApp.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos15.0",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/dennisdimitrov/Documents/GitHub/2021_prj_MovieWatchListApp_2/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/dennisdimitrov/Documents/GitHub/2021_prj_MovieWatchListApp_2/Build/Products",
+      "derivedDataPath" : "/Users/dennisdimitrov/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/dennisdimitrov/Library/Developer/Xcode/DerivedData/MovieWatchlistApp-apmivljgdajgwfabhkgneezhqdzf/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/dennisdimitrov/Library/Developer/Xcode/DerivedData/MovieWatchlistApp-apmivljgdajgwfabhkgneezhqdzf/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/dennisdimitrov/Documents/GitHub/2021_prj_MovieWatchListApp_2/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
